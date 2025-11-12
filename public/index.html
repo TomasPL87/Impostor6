@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Impostor Tomas</title><link rel="stylesheet" href="style.css"/></head>
+<body>
+  <div class="header">Impostor Tomas</div>
+  <div id="menu" class="card">
+    <input id="nameInput" placeholder="Twoje imię" />
+    <div class="row">
+      <select id="categorySelect"></select>
+      <button id="createBtn">Stwórz pokój</button>
+      <input id="joinCode" placeholder="Kod pokoju" />
+      <button id="joinBtn">Dołącz</button>
+    </div>
+    <div id="error" class="error"></div>
+  </div>
+  <div id="game" class="card" style="display:none;">
+    <h2 id="roomCode"></h2>
+    <div>Kategoria: <span id="chosenCategory"></span></div>
+    <div id="players"></div>
+    <div id="hostControls">
+      <button id="startBtn" style="display:none;">Rozpocznij grę</button>
+      <button id="endRoomBtn" style="display:none;margin-left:8px;">Zakończ pokój</button>
+      <button id="leaveBtn" style="display:none;margin-left:8px;">Opuść pokój</button>
+    </div>
+    <div id="roomMessage" style="color:#b00;margin-top:8px;"></div>
+    <div id="wordArea" style="display:none;">
+      <h3>Twoje słowo:</h3>
+      <p id="yourWord"></p>
+      <button id="playAgainBtn" style="display:none;">Graj dalej</button>
+    </div>
+  </div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body></html>

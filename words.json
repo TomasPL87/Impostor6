@@ -1,0 +1,31 @@
+{
+  "categories": {
+    "general": [
+      "jabłko",
+      "samochód",
+      "dom",
+      "kot",
+      "pies"
+    ],
+    "16plus": [
+      "abstrakcja",
+      "metafora",
+      "paradoks",
+      "ironia"
+    ],
+    "football": [
+      "piłka",
+      "bramka",
+      "trener",
+      "mecz",
+      "stadion"
+    ],
+    "disney": [
+      "miki",
+      "donald",
+      "elsa",
+      "anna",
+      "olaf"
+    ]
+  }
+}
